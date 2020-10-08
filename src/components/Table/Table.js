@@ -44,19 +44,3 @@ Table.defaultProps = {
 }
 
 export default Table;
-
-
-//
-// const table = createTable(id, imageURL, {
-//   name,
-//   price,
-//   tableType,
-//   numberOfLegs,
-//   numberOfSeats,
-//   material,
-//   colour,
-//   legsMaterial,
-//   topMaterial,
-//   topShape,
-//   baseShape
-// });

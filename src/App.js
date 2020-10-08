@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 import tables from './models/mocks/tables';
 import TableListing from './components/TableListing';
-import Featured from "./components/Featured";
+import FeaturedTables from "./components/Featured";
 
 function App() {
   return (
-    <Featured />
+    <FeaturedTables />
     // <TableListing tables={tables} />
   );
 }

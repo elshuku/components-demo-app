@@ -3,9 +3,11 @@ import Table from '../Table/Table' ;
 import CoffeeTable from '../Table/CoffeeTable' ;
 import {Colours, MaterialTypes, Shapes, TableTypes} from "../Table/types";
 
-function Featured() {
+function FeaturedTables() {
   return [
-    <Table key={'1'} id={1}
+    <Table
+          key={'1'} /** key is required by React for arrays of components */
+           id={1}
            imageURL='/assets/Coffee-Rectangular-Wood-table.PNG'
            name='Niva Coffee Table'
            price={179}
@@ -15,4 +17,4 @@ function Featured() {
   ];
 }
 
-export default Featured;
+export default FeaturedTables;
