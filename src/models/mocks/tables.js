@@ -3,7 +3,7 @@ import {MaterialTypes, Shapes, TableTypes} from "../../components/Table/types";
 export default [
   {
     id: 1,
-    imageURL: '/assets/Dining-Square-Wood-4Legged_table.PNG',
+    imageURL: '/assets/Dining-Rectangular-Wood-table.PNG',
     specs: {
       name: 'Retro 6 Seater Dining Table',
       price: 399,

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import {TableTypes} from "./types";
 
 function Table({
                  id,
@@ -10,6 +9,7 @@ function Table({
                  tableType,
                  material,
                  colour,
+                 numberOfSeats,
                }) {
 
   const getDescription = () => {
@@ -17,6 +17,7 @@ function Table({
       `Type: ${tableType} Table`,
       `Material is ${material}`,
       `Colour is ${colour}`,
+      `Number of Seats ${numberOfSeats}`
     ];
   }
 
@@ -36,12 +37,10 @@ Table.propTypes = {
   price: PropTypes.number.isRequired,
   material: PropTypes.string.isRequired,
   colour: PropTypes.string.isRequired,
-  tableType: PropTypes.string,
+  tableType: PropTypes.string.isRequired,
+  numberOfSeats: PropTypes.number
 };
 
-Table.defaultProps = {
-  tableType: TableTypes.Coffee
-}
+Table.defaultProps = {}
 
 export default Table;
-
