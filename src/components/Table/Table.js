@@ -10,7 +10,6 @@ function Table({
                  tableType,
                  material,
                  colour,
-                 numberOfSeats,
                }) {
 
   const getDescription = () => {
@@ -18,7 +17,6 @@ function Table({
       `Type: ${tableType} Table`,
       `Material is ${material}`,
       `Colour is ${colour}`,
-      `Comes with ${numberOfSeats} seats`
     ];
   }
 
@@ -38,8 +36,7 @@ Table.propTypes = {
   price: PropTypes.number.isRequired,
   material: PropTypes.string.isRequired,
   colour: PropTypes.string.isRequired,
-  tableType: PropTypes.string.isRequired,
-  numberOfSeats: PropTypes.number.isRequired,
+  tableType: PropTypes.string,
 };
 
 Table.defaultProps = {
