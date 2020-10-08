@@ -1,8 +1,6 @@
 import React from 'react';
-import createTable from '../../models/TableFactory';
 import PropTypes from "prop-types";
 import {TableTypes} from "./types";
-import CoffeeTable from "./CoffeeTable";
 
 function Table({
                  id,
