@@ -1,6 +1,8 @@
 import React from 'react';
 import Table from '../Table/Table.v3' ;
 import {Colours, MaterialTypes, Shapes, TableLegStyles, TableTypes} from "../Table/types";
+import ClassicCoffeeTable from "../Table/ClassicCoffeeTable";
+import RetroDiningTable from "../Table/RetroDiningTable";
 
 function FeaturedTables() {
   return [
@@ -18,31 +20,23 @@ function FeaturedTables() {
       legsType={TableLegStyles.Funky}
       tableType={TableTypes.Lamp}
     />,
-    <Table
+    <ClassicCoffeeTable
       key={'1'} /** key is required by React for arrays of components */
       id={1}
       imageURL='/assets/Coffee-Rectangular-Wood-table.PNG'
       name='Niva Coffee Table'
       price={179}
-      topMaterial={MaterialTypes.Wood}
-      legsMaterial={MaterialTypes.Wood}
-      topColour={Colours.Wood}
-      legsColour={Colours.Wood}
-      topShape={Shapes.Ellipse}
-      tableType={TableTypes.Coffee}
+      material={MaterialTypes.Wood}
+      colour={Colours.Wood}
     />,
-    <Table
+    <RetroDiningTable
       key={'2'}
       id={2}
       imageURL='/assets/Dining-Rectangular-Wood-table.PNG'
       name='Retro 6 Seater Dining Table'
       price={399}
-      topMaterial={MaterialTypes.Wood}
-      legsMaterial={MaterialTypes.Wood}
-      topColour={Colours.Wood}
-      legsColour={Colours.Wood}
-      topShape={Shapes.Rectangular}
-      tableType={TableTypes.Dining}
+      material={MaterialTypes.Wood}
+      colour={Colours.Wood}
       numberOfSeats={6}
     />,
   ];
