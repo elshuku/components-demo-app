@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
+import "./index.css";
 
 function Table({
                  id,
@@ -13,15 +14,20 @@ function Table({
                }) {
 
   const getDescription = () => {
-    return [
+    const desc = [
       `Type: ${tableType} Table`,
       `Material is ${material}`,
       `Colour is ${colour}`,
-      `Number of Seats ${numberOfSeats}`
     ];
+
+    if (numberOfSeats) {
+      desc.push(`Number of Seats ${numberOfSeats}`)
+    }
+
+    return desc;
   }
 
-  return (<div>
+  return (<div className={'resp-table'}>
     <h1>#{id} - {name} : <b>${price}</b></h1>
     <img src={imageURL} alt={tableType}/>
     <ul>

@@ -7,7 +7,7 @@ const fourLeggedWoodenSquareTopDiningTable = new DiningTable(
   1, '/dining-table.jpg', {
     legsMaterial: MaterialTypes.Wood,
     topMaterial: MaterialTypes.Wood,
-    topShape: Shapes.Square,
+    topShape: Shapes.Rectangular,
     numberOfSeats: 4,
   });
 

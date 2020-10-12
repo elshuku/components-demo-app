@@ -10,7 +10,7 @@ export default [
       tableType: TableTypes.Dining,
       legsMaterial: MaterialTypes.Wood,
       topMaterial: MaterialTypes.Wood,
-      topShape: Shapes.Square,
+      topShape: Shapes.Rectangular,
       numberOfSeats: 6,
     }
   },
@@ -49,7 +49,7 @@ export default [
       tableType: TableTypes.Dining,
       legsMaterial: MaterialTypes.Wood,
       topMaterial: MaterialTypes.Wood,
-      topShape: Shapes.Square,
+      topShape: Shapes.Rectangular,
       numberOfSeats: 6,
     }
   },

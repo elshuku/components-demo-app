@@ -14,11 +14,16 @@ export const MaterialTypes = {
 export const Shapes = {
   Circle: 'Circle',
   Ellipse: 'Ellipse',
-  Square: 'Square',
+  Rectangular: 'Rectangular',
 }
 
 export const Colours = {
   White: 'White',
   Wood: 'Wood',
   Metallic: 'Metallic',
+}
+
+export const TableLegStyles = {
+  Simple: 'Simple',
+  Funky: 'Funky',
 }

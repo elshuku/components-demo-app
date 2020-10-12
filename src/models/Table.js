@@ -10,7 +10,7 @@ export default class Table {
                 numberOfLegs = 4,
                 legsMaterial = MaterialTypes.Wood,
                 topMaterial = MaterialTypes.Wood,
-                topShape = Shapes.Square,
+                topShape = Shapes.Rectangular,
                 baseShape = null
               }) {
 
