@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import "./index.css";
-import {MaterialTypes, Shapes, TableLegStyles} from "./types";
-import TableDisplay from "./TableDisplay";
-import TableDiscriptor from "./TableDiscriptor";
+import {TableLegStyles} from "./types";
+import TableDisplay from "./Generic/TableDisplay";
+import TableDiscriptor from "./Generic/TableDiscriptor";
 
 function Table({displayProps, tableType, tableProps}) {
   return (<div className={'resp-table'}>

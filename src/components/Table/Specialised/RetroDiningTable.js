@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Shapes, TableLegStyles, TableTypes} from "./types";
-import Table from "./Table.v4";
+import {Shapes, TableLegStyles, TableTypes} from "../types";
+import Table from "../Table.v4";
 
 function RetroDiningTable({displayProps, tableType, tableProps}){
   const {material, colour, numberOfSeats} = tableProps;

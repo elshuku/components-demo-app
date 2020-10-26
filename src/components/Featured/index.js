@@ -1,8 +1,8 @@
 import React from 'react';
 import Table from '../Table/Table.v4' ;
 import {Colours, MaterialTypes, Shapes, TableLegStyles, TableTypes} from "../Table/types";
-import ClassicCoffeeTable from "../Table/ClassicCoffeeTable";
-import RetroDiningTable from "../Table/RetroDiningTable";
+import ClassicCoffeeTable from "../Table/Specialised/ClassicCoffeeTable";
+import RetroDiningTable from "../Table/Specialised/RetroDiningTable";
 
 function FeaturedTables() {
   return [

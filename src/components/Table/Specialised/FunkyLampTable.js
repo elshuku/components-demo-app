@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Shapes, TableLegStyles, TableTypes} from "./types";
-import Table from "./Table.v4";
+import {Shapes, TableLegStyles, TableTypes} from "../types";
+import Table from "../Table.v4";
 
-function ClassicCoffeeTable({displayProps, tableType, tableProps}){
+function FunkyLampTable({displayProps, tableType, tableProps}){
   const {material, colour} = tableProps;
   const enhTableProps = {
     legsType: TableLegStyles.Simple,
@@ -17,7 +17,7 @@ function ClassicCoffeeTable({displayProps, tableType, tableProps}){
   return (<Table displayProps={displayProps} tableType={tableType} tableProps={enhTableProps}/>);
 }
 
-ClassicCoffeeTable.propTypes = {
+FunkyLampTable.propTypes = {
   displayProps: PropTypes.shape({
     id: PropTypes.number.isRequired,
     imageURL: PropTypes.string.isRequired,
@@ -31,8 +31,8 @@ ClassicCoffeeTable.propTypes = {
   }).isRequired
 };
 
-ClassicCoffeeTable.defaultProps = {
+FunkyLampTable.defaultProps = {
   tableType: TableTypes.Coffee
 }
 
-export default ClassicCoffeeTable;
+export default FunkyLampTable;

@@ -1,6 +1,15 @@
 import React from "react";
 
-const TableDiscriptor = ({tableType, topColour, topShape, topMaterial, legsColour, legsType, legsMaterial, baseShape, baseColour, numberOfSeats}) => {
+const TableDiscriptor = ({tableType,
+                           topColour,
+                           topShape,
+                           topMaterial,
+                           legsColour,
+                           legsType,
+                           legsMaterial,
+                           baseShape,
+                           baseColour,
+                           numberOfSeats}) => {
   const getDescription = () => {
     const desc = [
       <span>Type: <u>{tableType}</u> Table</span>,
